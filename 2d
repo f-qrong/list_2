@@ -1,0 +1,52 @@
+shoe_rack = [["blue converse", "sandals", "ballet shoes"],
+            ["brown shoes", "sneakers", ],
+            ["red pumps", "soccor shoes", "red high heels"]]
+
+print(shoe_rack)
+print(shoe_rack[1][0])
+
+print("\n")
+
+for row in shoe_rack:
+    for shoe in row:
+        print(shoe)
+
+print("\n")
+
+row_1 = 0
+while row_1 < len(shoe_rack):
+    print(shoe_rack[row_1])
+    row_1 = row_1 + 1
+
+print("\n")
+
+print(len(shoe_rack))
+print("\n")
+
+row_2 = shoe_rack[1]
+print(len(row_2))
+print("\n")
+
+shoe_rack_1 = shoe_rack[0:2]
+print(shoe_rack_1)
+print("\n")
+
+shoe_rack_2 = shoe_rack[-2]
+print(shoe_rack_2)
+print("\n")
+
+shoe_rack_3 = shoe_rack[:2]
+shoe_rack_4 = shoe_rack[0:]
+print(shoe_rack_3)
+print(shoe_rack_4)
+print("\n")
+
+shoe_rack = shoe_rack[0:1] + [shoe_rack[-1]]
+print(shoe_rack)
+print("\n")
+
+shoe_rack.sort()
+print(shoe_rack)
+
+shoe_rack.reverse()
+print(shoe_rack)
